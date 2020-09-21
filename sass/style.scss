@@ -1,0 +1,28 @@
+@charset "UTF-8";
+
+@import "variables.scss";
+
+@import "typography.scss";
+
+@import "general.scss";
+
+/* @import "../node_modules/normalize.css/normalize";  проверить */
+
+/* Blocks */
+@import "blocks/visually-hidden";
+
+
+@import "blocks/button.scss";
+
+@import "blocks/page-header.scss";
+@import "blocks/main-nav.scss";
+@import "blocks/page-main.scss";
+@import "blocks/intro.scss";
+@import "blocks/advantages.scss";
+@import "blocks/reviews.scss";
+@import "blocks/price.scss";
+@import "blocks/contest.scss";
+@import "blocks/gallery.scss";
+@import "blocks/uploader.scss";
+@import "blocks/contacts.scss";
+@import "blocks/page-footer.scss";

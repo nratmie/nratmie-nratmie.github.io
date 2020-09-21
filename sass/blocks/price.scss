@@ -1,0 +1,152 @@
+.price {
+  width: 320px;
+  margin: 0 auto;
+
+  background-color: $secondary-bg-color;
+}
+
+.price__list-wrapper {
+  padding-bottom: 16px;
+
+  &::before {
+    content: "";
+    display: block;
+
+    width: 320px;
+    height: 25px;
+
+    background: url("../img/bg-triangle-white.svg") no-repeat;
+    background-size: 320px 25px;
+  }
+}
+
+.price__slider-list {
+ padding-top: 65px;
+}
+
+.price__list {
+/* overflow-y: auto; */
+  table-layout: fixed;
+  border-collapse: collapse;
+}
+
+.price__list-header  {
+}
+
+.price__cell {
+  padding: 18px;
+  min-width: 276px;
+  max-width: 276px;
+
+  color: $base-bg-color;
+  background-color: #ffffff;
+  border: 2px solid #e5e5e5;
+  text-transform: uppercase;
+
+  &-head {
+    line-height: 2.14285714;
+    color: #ffffff;
+
+    border-top: none;
+    background-color: $base-bg-color;
+
+    &--empty {
+      background-color: transparent;
+    }
+  }
+}
+
+.price__name {
+  margin: 0;
+
+  font-size: 18px;
+  line-height: 1.6666667;
+  font-weight: bold;
+  color: inherit;
+}
+
+.price__value {
+  margin: 0;
+
+  font-size: 24px;
+  line-height: 1.25;
+  font-weight: 300;
+}
+
+/* slider */
+.price__toggles-wrapper {
+  width: 54px;
+  margin: 0 auto;
+}
+
+.price__toggles {
+  display: flex;
+  justify-content: space-between;
+  width: 50px;
+
+  margin: 40px 0 30px;
+  padding: 0;
+  height: 12px;
+
+  list-style: none;
+}
+
+.price__toggle {
+  position: relative;
+  margin: 0;
+  padding: 0;
+
+  &::before {
+    content: "";
+    position: absolute;
+    margin-top: 3px;
+
+    width: 6px;
+    height: 6px;
+
+    background-color: $base-bg-color;
+    border-radius: 50%;
+    opacity: 0.3;
+  }
+
+  &:hover::before{
+    opacity: 0.6;
+  }
+
+  &:active::before{
+    opacity: 0.1;
+  }
+
+  &--active::after {
+    content: "";
+    position: absolute;
+    left: -3px;
+    box-sizing: content-box;
+
+    width: 6px;
+    height: 6px;
+
+    background-color: #ffffff;
+    border-radius: 50%;
+    border: 3px solid $base-bg-color;
+  }
+}
+
+@media (min-width: $tablet-width) {
+  .price {
+    width: auto;
+
+  }
+
+  .price__list-wrapper {
+    border: 3px solid green;//del
+    width: 660px;
+    margin: 0 auto;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .price__list-wrapper {
+    width: 960px;
+  }
+}

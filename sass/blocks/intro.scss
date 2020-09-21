@@ -1,0 +1,129 @@
+.intro {
+  width: 320px;
+  margin: 0 auto;
+  /* display: none; //delete */
+  /*margin-top: -66px; // placing background-image under menu*/
+  /*padding-top: 176px;*/
+
+  overflow: hidden;
+
+  /*включить
+  background: #293847 url("../img/bg-back-mobile@1x.jpg")  no-repeat;*/
+
+  &--index {
+
+  }
+
+  &--photo {
+
+  }
+
+  &--form {
+
+  }
+}
+
+/*.intro--index::before {
+  content: "";
+  display: block;
+
+  width: 320px;
+  height: 286px;
+
+  включить
+    background: url("../img/iphone-hand-mobile@1x.png") no-repeat;
+  background-size: 258px 286px;
+}*/
+
+.intro__container {
+  /*height: 172px; ??*/
+}
+
+.intro__download {
+      box-shadow: 0 0 5px cyan inset;//del
+  display: flex;
+  flex-flow: column;
+
+  height: 665px;
+
+  background-color: #1d2631;
+}
+
+.intro__title {
+  margin: 0;
+  /*padding: 35px 20px 20px;* деформирует блок */
+  padding: 0;
+
+  font-size: 24px;
+  line-height: 1.25;
+  font-weight: 300;
+  text-align: center;
+}
+
+.intro__download-wrapper {
+  box-shadow: 0 0 5px white inset;//del
+
+  min-height: 270px;
+  margin-top: auto;
+  /*padding: 28px 20px;*/
+}
+
+.intro__list {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+
+  margin: 30px auto 16px auto;
+  padding: 0;
+
+  width: 208px;
+  list-style: none;
+}
+
+.intro__item {
+
+}
+
+.intro__link {
+}
+
+.intro-text {
+  margin: 0;
+  color: #c3c5c8;
+  text-align: center;
+  font-weight: 300;
+}
+
+@media (min-width: $tablet-width) {
+  .intro {
+    width: auto;
+  }
+
+  .intro__download {
+    box-shadow: 0 0 5px orange inset;//delete
+
+    width: 660px;
+    height: 620px;
+
+    margin: 0 auto;
+  }
+
+  .intro__download-wrapper {
+    width: 300px;
+    height: 620px;
+
+    margin: 0 0 0 10px;
+    padding: 0;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .intro__download {
+    width: 960px;
+    height: 740px;
+  }
+
+  .intro__download-wrapper {
+    height: 740px;
+  }
+}

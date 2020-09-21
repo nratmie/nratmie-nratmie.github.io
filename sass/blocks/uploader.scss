@@ -1,0 +1,154 @@
+.uploader {
+  width: 320px;
+  margin: 0 auto;
+
+  background-color: #ffffff;
+
+  color: $base-bg-color;
+}
+
+.uploader__title {
+  margin: 0;
+  padding: 40px 35px 50px;
+
+  line-height: 2.14285714;
+  text-align: center;
+}
+
+.uploader__wrapper {
+  padding: 20px;
+}
+
+.uploader__buttons {
+  padding-top: 40px;
+
+}
+
+.uploader__list {
+  display: flex;
+  justify-content: space-between;
+  width: 210px;
+  height: 43px;
+
+  margin: 32px auto 42px;
+  padding: 0;
+
+  list-style: none;
+}
+
+.uploader__button {
+  &--crop svg {
+    width: 45px;
+    height: 45px;
+  }
+
+  &--fill svg {
+    width: 48px;
+    height: 43px;
+  }
+
+  &--contrast svg {
+    width: 32px;
+    height: 32px;
+  }
+
+  font-size: 0;
+  border: 0;
+  background: none;
+  fill: rgba($base-bg-color, 0.3);
+
+  &:hover {
+    fill: rgba($base-bg-color, 0.5);
+  }
+
+  &--active {
+    fill: $brand-pink-color;
+
+    &:hover {
+      fill: $brand-pink-color;
+    }
+  }
+}
+
+.uploader__list-buttons {
+  display: flex;
+}
+
+.uploader__slider {
+
+}
+
+.slider__bar {
+  margin: 0 auto;
+
+  width: 240px;
+  height: 2px;
+  background-color: $base-bg-color;
+}
+
+.slider__handle {
+  position: relative;
+
+  &:active::before {
+    background-color: $brand-pink-color;
+  }
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: -7px;
+    left: 77%;
+    width: 13px;
+    height: 13px;
+
+    border-radius: 50%;
+    border: 2px solid $brand-pink-color;
+    background-color: #ffffff;
+  }
+}
+
+.uploader__edit {
+  position: relative;
+  padding: 0;
+  margin-bottom: 20px;
+
+  background-color: $secondary-bg-color;
+
+  &::after {
+    content: "";
+    position: absolute;
+    display: block;
+    bottom: 145px;
+    margin-left: -20px;
+    width: 320px;
+    height: 1px;
+    background-color: rgba($base-bg-color, 0.1);
+  }
+}
+
+.uploader__buttons {
+   margin-top: 32px;
+}
+
+.uploader__btn {
+  margin-bottom: 15px;
+}
+
+@media (min-width: $tablet-width) {
+  .uploader {
+    width: auto;
+  }
+
+  .uploader__wrapper {
+    width: 660px;
+    margin: 0 auto;
+    border: 3px solid red;//del
+
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .uploader__wrapper {
+    width: 960px;
+  }
+}

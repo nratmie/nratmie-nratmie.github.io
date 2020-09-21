@@ -1,0 +1,277 @@
+.contest {
+  width: 320px;
+  margin: 0 auto;
+
+  background-color: #ffffff;
+
+  color: $base-bg-color;
+}
+
+.contest__description {
+  margin: 0;
+  padding: 45px 30px 35px;
+
+  line-height: 2.14285714;
+  text-align: center;
+}
+
+.contest__container {
+  padding: 0;
+
+  border: none;
+}
+
+.contest__list {
+  margin: 0;
+  padding: 0;
+
+  list-style: none;
+}
+
+.contest__achievements,
+.contest__app {
+  background-color: $secondary-bg-color;
+}
+
+/* User-info - фио */
+.contest__user-info {
+  padding-bottom: 26px;
+}
+
+.contest__label {
+  display: block;
+  margin-left: 42px;
+  margin-bottom: 4px;
+
+  line-height: $line-height-30-14;
+  text-transform: uppercase;
+  color: $brand-pink-color;
+}
+
+.contest__input {
+  margin: 0 auto;
+}
+
+.input {
+  display: block;
+  margin-bottom: 16px;
+  padding: 16px 20px;
+  width: 280px;
+
+  font-family: $base-font-family;
+  font-size: 18px;
+  line-height: $line-height-30-18;
+
+  border: 2px solid $secondary-bg-color;
+  border-radius: 4px;
+
+  &:hover {
+    border-color: $base-bg-color;
+  }
+
+  &:active,
+  &:focus {
+    outline: none;
+    border-color: $brand-pink-color;
+  }
+}
+
+.contest__title {
+  padding: 40px 40px 45px;
+  line-height: $line-height-18-14;
+  text-transform: uppercase;
+  color: $brand-pink-color;
+
+  text-align: center;
+}
+
+/* Achievs - чекбоксы */
+
+.checkbox__item {
+  margin-bottom: 53px;
+
+  &:last-child {
+    margin-bottom: 46px;
+  }
+}
+
+.checkbox__label {
+  position: relative;
+  margin-left: 85px;
+
+  font-size: 18px;
+  line-height: $line-height-30-18;
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: -10px;
+    left: -68px;
+
+    width: 39px;
+    height: 39px;
+
+    border: 2px solid #e5e5e5;
+    background-color: #ffffff;
+  }
+
+  &:hover::before {
+    border-color: $base-bg-color;
+  }
+
+  &:active::before {
+    border-color: $brand-pink-color;
+  }
+}
+
+.checkbox__input:checked ~ .checkbox__label::after {
+  content: "";
+  position: absolute;
+  top: 2px;
+  left: -60px;    width: 22px;
+  height: 16px;
+
+  background: url("../img/icon-yes.svg");
+}
+
+/* Contacts - телефон, email */
+.contest__contacts {
+  padding: 34px 0 25px;
+}
+
+/* App - Радикнопки */
+
+.radio__item {
+  margin-bottom: 45px;
+
+  &:last-child {
+    margin-bottom: 46px;
+  }
+}
+
+.radio__label {
+  position: relative;
+  margin-left: 85px;
+
+  font-size: 18px;
+  line-height: $line-height-30-18;
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: -10px;
+    left: -68px;
+
+    width: 39px;
+    height: 39px;
+
+    border: 2px solid #e5e5e5;
+    border-radius: 50%;
+    background-color: #ffffff;
+  }
+
+  &:hover::before {
+    border-color: $base-bg-color;
+  }
+
+  &:active::before {
+    border-color: $brand-pink-color;
+  }
+}
+
+.radio__input:checked ~ .radio__label::after {
+  content: "";
+  position: absolute;
+  top: 2px;
+  left: -57px;
+  width: 16px;
+  height: 16px;
+
+  border-radius: 50%;
+  background-color: $brand-pink-color;
+}
+
+/* Feedback */
+
+.contest__feedback {
+  padding: 35px 0 43px;
+}
+
+.contest__textarea-label {
+  display: block;
+  margin-bottom: 10px;
+
+  line-height: $line-height-30-14;
+  text-align: center;
+  text-transform: uppercase;
+  color: $brand-pink-color;
+}
+
+.contest__textarea {
+  margin: 0 20px;
+  padding: 15px 20px;
+
+  width: 280px;
+  height: 198px;
+
+  resize: none;
+
+  font-family: $base-font-family;
+  font-size: 18px;
+  line-height: $line-height-30-18;
+  color: $base-bg-color;
+
+  border: 2px solid #e5e5e5;
+  border-radius: 3px;
+
+  &::placeholder {
+    color: $base-bg-color;
+  }
+
+  &:hover{
+    border-color: $base-bg-color;
+  }
+
+  &:active,
+  &:focus {
+    border-color: $brand-pink-color;
+    outline: none;
+  }
+}
+
+.contest__sumbit {
+  margin: 0 20px;
+}
+
+.contest__note {
+  margin: 0;
+  padding: 34px 0 15px;
+
+  line-height: $line-height-30-14;
+  text-transform: uppercase;
+  text-align: center;
+
+  &--main {
+    color: $base-bg-color;
+  }
+
+  &--star {
+    color: $brand-pink-color;
+  }
+}
+
+@media (min-width: $tablet-width) {
+  .contest{
+    border: 2px solid orange; //temp
+
+    width: 640px;
+    margin: 0 auto;
+    padding: 0;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .contest {
+    width: 960px;
+  }
+}

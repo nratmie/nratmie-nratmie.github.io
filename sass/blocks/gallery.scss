@@ -1,0 +1,117 @@
+.gallery {
+  width: 320px;
+  margin: 0 auto;
+
+  background-color: #ffffff;
+
+  color: $base-bg-color;
+}
+
+.gallery__title {
+  margin: 0;
+  padding: 43px 35px 48px;
+
+  line-height: 2.14285714;
+  text-align: center;
+}
+
+.gallery__item {
+  margin: 0;
+}
+
+.gallery__thumbnail {
+  img {
+    margin-left: 20px;
+  }
+}
+
+.gallery__item--panorama {
+  position: relative;
+
+  &::before {
+    content: "Панорама дня";
+    position: absolute;
+    display: block;
+    top: 0;
+    right: 20px;
+
+    width: 140px;
+    height: 36px;
+    padding: 6px;
+
+    font-size: 12px;
+    line-height: 2;
+    font-weight: 700;
+    text-transform: uppercase;
+    text-align: center;
+    color: #ffffff;
+    background-color: $brand-pink-color;
+    }
+}
+
+.gallery__item-wrapper {
+  /*margin: 0 20px 0; */
+  margin: -10px 20px 20px;
+  padding: 24px 20px 8px;
+
+  background-color: $secondary-bg-color;
+
+  &:last-child {
+    margin-bottom: 0;
+  }
+}
+
+.gallery__author-name {
+  font-style: normal;
+}
+
+.gallery__review-time {
+  text-transform: uppercase;
+}
+
+.gallery__text {
+  margin: 0;
+}
+
+.gallery__like {
+  display: flex;
+}
+
+.gallery__like-button {
+  margin-top: 17px;
+  width: 13px;
+  height: 12px;
+
+  background: url("../img/icon-heart.svg") no-repeat;
+  font-size: 0;
+  border: none;
+}
+
+.gallery__like-counter {
+  /*margin: 10px 0 10px 32px;*/
+  margin-left: 18px;
+
+  font-size: 12px;
+  line-height: 2;
+  text-transform: uppercase;
+  color: $brand-pink-color;
+}
+
+@media (min-width: $tablet-width) {
+  .gallery {
+    width: auto;
+  }
+
+  .gallery__wrapper {
+    width: 660px;
+    margin: 0 auto;
+    border: 3px solid green;//del
+
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .gallery__wrapper {
+    width: 960px;
+  }
+}

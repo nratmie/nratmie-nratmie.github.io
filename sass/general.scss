@@ -1,0 +1,29 @@
+html {
+  box-sizing: border-box;
+}
+
+*, *::before, *::after {
+  box-sizing: inherit;
+}
+
+html,
+body {
+  min-width: 320px; // not sure !!!
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: $base-font-family;
+  font-size: 14px;
+  line-height: $base-line-height;
+  font-weight: 400;
+  color: #ffffff;
+
+  background-color: $base-bg-color;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+} // protection against overflowing

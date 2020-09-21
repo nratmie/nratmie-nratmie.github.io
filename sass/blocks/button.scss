@@ -1,0 +1,99 @@
+.button {
+  display: inline-block;
+
+  min-width: 280px;
+  padding: 16px 10px;
+
+  border: none;
+  border-radius: 28px;
+
+  font-size: 18px;
+  line-height: 1;
+  font-weight: 700;
+  text-align: center;
+  text-decoration: none;
+
+  &--download {
+    border: 3px solid #ffffff;
+    background-color: #1d2631;
+
+    color: #ffffff;
+
+    &:hover {
+      background-color: #ffffff;
+      color: $brand-pink-color;
+    }
+
+    &:active {
+      background-color: #ffffff;
+      color: rgba($brand-pink-color, 0.3);
+    }
+
+    &--confirm {
+
+    }
+  }
+
+  &--submit {
+    border: 3px solid $brand-pink-color;
+
+    color: $brand-pink-color;
+
+    &:hover {
+      background-color: $brand-pink-color;
+      color: #ffffff;
+    }
+
+    &:active,
+    &:focus  {
+      color:  rgba(#ffffff, 0.3);
+      outline: none;
+    }
+  }
+
+  &--reset {
+    border: 3px solid rgba($base-bg-color, 0.1);
+
+    color: rgba($base-bg-color, 0.1);
+
+    &:hover {
+      border-color: rgba($base-bg-color, 0.3);
+
+      color: rgba($base-bg-color, 0.3);
+    }
+
+    &:active,
+    &:focus {
+      background-color: rgba($base-bg-color, 0.3);
+      border-color: rgba($base-bg-color, 0);
+
+      color: rgba(#ffffff, 0.3);
+      outline: none;
+    }
+  }
+
+  &--submit-form {
+    padding: 24px 10px;
+    color: #ffffff;
+    text-transform: uppercase;
+
+    background-color: #2aab6d;
+    border-radius: 3px;
+
+    &:hover {
+      background-color: #1c9b5e;
+    }
+
+    &:active,
+    &:focus {
+      color: rgba(#ffffff, 0.3);
+      background-color: lighten(#1c9b5e, 2%);
+
+      outline: none;
+    }
+
+    &:disabled {
+      background-color: #e5e5e5;
+    }
+  }
+}
